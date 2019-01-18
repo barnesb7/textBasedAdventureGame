@@ -22,24 +22,25 @@ public class Main {
 
     String stageTwoEaglePrompt = "You are now riding the spine of a bucking american-bad-ass eagle. Do you:";
     String stageTwoEagleOptionOne = "1 - Sing Oh Canada and feed it maple syrup";
-    String stageTwoEagleOptionTwo = "2- Sing The Star Spangled Banner and feed it over-priced healthcare";
+    String stageTwoEagleOptionTwo = "2 - Sing The Star Spangled Banner and feed it over-priced healthcare";
 
     String stageThreeLiftPrompt = "You are now nearing outerspace. Do you:";
-    String stageThreeLiftOptionOne = "Call for an alien Uber";
-    String stageThreeLiftOptionTwo = "Keep it stokin!";
+    String stageThreeLiftOptionOne = "1 - Call for an alien Uber";
+    String stageThreeLiftOptionTwo = "2 - Keep it stokin!";
 
     String stageThreeNapPrompt = "You wake up to find yourself landed in a second non-fiery bog. Do you:";
-    String stageThreeNapOptionOne = "Shake your head and sulk in your sorrows walking towards a field";
-    String stageThreeNapOptionTwo = "Scream loudly and cry while walking towards the forest";
+    String stageThreeNapOptionOne = "1 - Shake your head and sulk in your sorrows walking towards a field";
+    String stageThreeNapOptionTwo = "2 - Scream loudly and cry while walking towards the forest";
 
     String stageThreeOhCanadaPrompt = "Your singing of Canadas national anthem soothed the eagle. Do you:";
-    String stageThreeOhCanadaOptionOne = "Accept the free healthcare its giving you";
-    String stageThreeOhCanadaOptionTwo = "Sit with it on a moose while eating Tim Hortens";
+    String stageThreeOhCanadaOptionOne = "1 - Accept the free health care its giving you";
+    String stageThreeOhCanadaOptionTwo = "2 - Sit with it on a moose while eating Tim Hortens and reading Leonard Cohen";
 
     String stageThreeStarSpangledPrompt ="Your singing of Americas national anthem got the american-bad-ass eagle hype. Do you:";
-    String stageThreeStarSpangledOptionOne = "Drink FourLoco and fan the bog fire across the entire earth";
-    String stageThreeStarSpangledOptionTwo = "Drink gasoline and burn all the worlds fossil fuels";
+    String stageThreeStarSpangledOptionOne = "1 - Drink FourLoco and fan the bog fire across the entire earth";
+    String stageThreeStarSpangledOptionTwo = "2 - Drink gasoline and burn all the worlds fossil fuels";
 
+    String finalPromptForWin = "You did it. The world is either ruined or saved... only time will tell.";
 
     boolean wantToContinue = true;
 
@@ -52,22 +53,31 @@ public class Main {
             userAnswer = userInput.nextInt();
 
                 if(userAnswer == 1){
+                    System.out.println(stageThreeLiftPrompt + lineBreak + stageThreeLiftOptionOne  + lineBreak + stageThreeLiftOptionTwo);
+                    userAnswer = userInput.nextInt();
+                    System.out.println(finalPromptForWin);
 
                 } else if(userAnswer == 2){
-
+                    System.out.println(stageThreeNapPrompt + lineBreak + stageThreeNapOptionOne + lineBreak + stageThreeNapOptionTwo);
+                    userAnswer = userInput.nextInt();
+                    System.out.println(finalPromptForWin);
                 }
 
 
-        } else if (userAnswer == 2){
+        } else if (userAnswer == 2) {
 
             System.out.println(stageTwoEaglePrompt + lineBreak + stageTwoEagleOptionOne + lineBreak + stageTwoEagleOptionTwo);
             userAnswer = userInput.nextInt();
 
-                if(userAnswer == 1){
-
-                } else if(userAnswer == 2){
-
-                }
+            if (userAnswer == 1) {
+                System.out.println(stageThreeOhCanadaPrompt + lineBreak + stageThreeOhCanadaOptionOne + lineBreak + stageThreeOhCanadaOptionTwo);
+                userAnswer = userInput.nextInt();
+                System.out.println(finalPromptForWin);
+            } else if (userAnswer == 2) {
+                System.out.println(stageThreeStarSpangledPrompt + lineBreak + stageThreeStarSpangledOptionOne + lineBreak + stageThreeStarSpangledOptionTwo);
+                userAnswer = userInput.nextInt();
+                System.out.println(finalPromptForWin);
+            }
 
 
         }
