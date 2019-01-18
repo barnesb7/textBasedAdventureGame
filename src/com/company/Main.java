@@ -24,6 +24,23 @@ public class Main {
     String stageTwoEagleOptionOne = "1 - Sing Oh Canada and feed it maple syrup";
     String stageTwoEagleOptionTwo = "2- Sing The Star Spangled Banner and feed it over-priced healthcare";
 
+    String stageThreeLiftPrompt = "";
+    String stageThreeLiftOptionOne = "";
+    String stageThreeLiftOptionTwo = "";
+
+    String stageThreeNapPrompt = "";
+    String stageThreeNapOptionOne = "";
+    String stageThreeNapOptionTwo = "";
+
+    String stageThreeOhCanadaPrompt = "";
+    String stageThreeOhCanadaOptionOne = "";
+    String stageThreeOhCanadaOptionTwo = "";
+
+    String stageThreeStarSpangledPrompt ="";
+    String stageThreeStarSpangledOptionOne = "";
+    String stageThreeStarSpangledOptionTwo = "";
+
+
     boolean wantToContinue = true;
 
     do{
@@ -33,17 +50,41 @@ public class Main {
         if(userAnswer == 1){
             System.out.println(stageTwoBalloonPrompt + lineBreak + stageTwoBalloonOptionOne + lineBreak + stageTwoBalloonOptionTwo);
             userAnswer = userInput.nextInt();
+
+                if(userAnswer == 1){
+
+                } else if(userAnswer == 2){
+
+                }
+
+
         } else if (userAnswer == 2){
 
             System.out.println(stageTwoEaglePrompt + lineBreak + stageTwoEagleOptionOne + lineBreak + stageTwoEagleOptionTwo);
             userAnswer = userInput.nextInt();
 
+                if(userAnswer == 1){
 
+                } else if(userAnswer == 2){
+
+                }
 
 
         }
 
-        
+
+     String playAgainPrompt = "Would you like to play again?";
+     String playAgainOptionOne = "1 - Yes";
+     String playAgainOptionTwo = "2 - No";
+
+        System.out.println(playAgainPrompt + lineBreak + playAgainOptionOne + lineBreak + playAgainOptionTwo);
+        int playAgainAnswer = userInput.nextInt();
+
+        if (playAgainAnswer == 2){
+
+            System.out.println("Thanks for playing!");
+            wantToContinue = false;
+        }
 
     }while(wantToContinue);
 
