@@ -24,21 +24,21 @@ public class Main {
     String stageTwoEagleOptionOne = "1 - Sing Oh Canada and feed it maple syrup";
     String stageTwoEagleOptionTwo = "2- Sing The Star Spangled Banner and feed it over-priced healthcare";
 
-    String stageThreeLiftPrompt = "";
-    String stageThreeLiftOptionOne = "";
-    String stageThreeLiftOptionTwo = "";
+    String stageThreeLiftPrompt = "You are now nearing outerspace. Do you:";
+    String stageThreeLiftOptionOne = "Call for an alien Uber";
+    String stageThreeLiftOptionTwo = "Keep it stokin!";
 
-    String stageThreeNapPrompt = "";
-    String stageThreeNapOptionOne = "";
-    String stageThreeNapOptionTwo = "";
+    String stageThreeNapPrompt = "You wake up to find yourself landed in a second non-fiery bog. Do you:";
+    String stageThreeNapOptionOne = "Shake your head and sulk in your sorrows walking towards a field";
+    String stageThreeNapOptionTwo = "Scream loudly and cry while walking towards the forest";
 
-    String stageThreeOhCanadaPrompt = "";
-    String stageThreeOhCanadaOptionOne = "";
-    String stageThreeOhCanadaOptionTwo = "";
+    String stageThreeOhCanadaPrompt = "Your singing of Canadas national anthem soothed the eagle. Do you:";
+    String stageThreeOhCanadaOptionOne = "Accept the free healthcare its giving you";
+    String stageThreeOhCanadaOptionTwo = "Sit with it on a moose while eating Tim Hortens";
 
-    String stageThreeStarSpangledPrompt ="";
-    String stageThreeStarSpangledOptionOne = "";
-    String stageThreeStarSpangledOptionTwo = "";
+    String stageThreeStarSpangledPrompt ="Your singing of Americas national anthem got the american-bad-ass eagle hype. Do you:";
+    String stageThreeStarSpangledOptionOne = "Drink FourLoco and fan the bog fire across the entire earth";
+    String stageThreeStarSpangledOptionTwo = "Drink gasoline and burn all the worlds fossil fuels";
 
 
     boolean wantToContinue = true;
